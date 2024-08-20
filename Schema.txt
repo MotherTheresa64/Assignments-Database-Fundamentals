@@ -1,0 +1,12 @@
+Relationships "Schema"
+1.) Books to Authors:
+-One-to-Many: One author can write many books, but each book is written by only one author.
+-Books.AuthorID (Foreign Key) references Authors.AuthorID (Primary Key).
+
+2.) Transactions to Customers:
+-One-to-Many: One customer can have many transactions, but each transaction is associated with only one customer.
+-Transactions.CustomerID (Foreign Key) references Customers.CustomerID (Primary Key).
+
+3.) Transactions to Books:
+-One-to-Many: One book can be involved in many transactions, but each transaction involves only one book.
+-Transactions.BookID (Foreign Key) references Books.BookID (Primary Key).
